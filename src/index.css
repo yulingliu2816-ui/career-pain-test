@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "ZCOOL+XiaoWei", serif;
+  --color-brand-primary: #334155;
+  --color-brand-accent: #64748b;
+  --color-brand-bg: #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-primary font-sans antialiased;
+  }
+}
+
+.brand-text {
+  font-family: var(--font-brand);
+}
+
